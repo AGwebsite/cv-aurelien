@@ -39,7 +39,7 @@
     --mb-3: 1.5rem;
 
 /*z-index: */
-    --z-tooltips: 10;
+    --z-tooltip: 10;
     --z-fixed: 100;
 
 }
@@ -296,13 +296,13 @@ img{
 }
 
 /*EDUCATION and EXPERIENCE*/
-.education_content{
+.education_content, .experience_content{
     display: flex;
 }
-.education_time{
+.education_time, .experience_time{
     padding-right: 1rem;
 }
-.education_rounder{
+.education_rounder, .experience_rounder{
     position: relative;
     display: block;
     width: 16px;
@@ -311,7 +311,7 @@ img{
     border-radius: 50%;
     margin-top: .25rem;
 }
-.education_line{
+.education_line, .experience_line{
     display: block;
     width: 2px;
     height: 110%;
@@ -319,17 +319,150 @@ img{
     transform: translate(7px, 0);
 }
 
-.education_data{
+.education_data, .experience_data{
     gap:.5rem;
 }
-.education_title{
+.education_title, .experience_title{
     font-size: var(--h3-font-size);
 }
-.education_studies{
+.education_studies, .experience_company{
     font-size: var(--small-font-size);
     color: var(--title-color);
 }
 .education_year{
     font-size: var(--small-font-size);
     
+}
+
+/* SKILLS and LANGUAGES*/
+
+.skills_content, .languages_content{
+    grid-template-columns: repeat(2, 1fr);
+}
+.languages_content{
+    gap: 0;
+}
+.skills_name, .languages_name{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-3);
+}
+.skills_circle, .languages_circle{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    margin-right: .75 rem;
+}
+
+/*CERTIFICATED*/
+.certificate_title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+/*REFERENCES*/
+.references_content{
+    gap: .25rem;
+}
+
+.references_subtitle{
+    color: var(--text-color-light);
+}
+
+.references_subtitle, .referencess_contact{
+    font-size: var(--smaller-font-size);
+}
+
+.references_title{
+    font-size: var(--h3-font-size);
+}
+
+/*INTERESTS*/
+.interests_container{
+    grid-template-columns: repeat(3,1fr);
+    margin-top: var(--mb-2);
+}
+.interests_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.interests_icon{
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+    margin-bottom:.25rem;
+}
+
+/*Scroll top*/
+.scrolltop{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background-color: var(--container-color);
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    visibility: hidden;
+}
+
+.scrolltop_icone{
+    font-size: 1.2rem;
+    color: var(--text-color);
+
+}
+
+.show-scroll{
+    visibility: visible;
+    bottom : 5rem;
+}
+
+/*MEDIA QUERIES*/
+/*for small devices, menu two colums*/
+@media screen and (max-width: 320px){
+    .nav_list{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem .5rem;
+    }
+}
+/*classes modified for large screen size*/
+@media screen and (min-width: 968px){
+    body{
+        margin: 3rem 0;
+    }
+    .bd-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .l-header, .scrolltop{
+        display: none;
+    }
+    .resume{
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        background-color: var(--container-color);
+        box-shadow: 0 0 8px rgba(13,12,12.15);
+    }
+
+    .resume_left{
+        background-color: var(--container-color-alt);
+    }
+    .resume_left, .resume_right{
+        padding: 0 1.5rem;
+    }
+    .section-title, .profile_description{
+        text-align: initial;
+
+    }
+    .home_container{
+        gap:1.5rem;
+    }
+    .home_button-movil{
+        display: none;
+    }
 }
