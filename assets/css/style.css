@@ -55,9 +55,28 @@ html{
 }
 
 /* variable dark theme*/
+body.dark-theme{
+    --title-color: #f2f2f2;
+    --text-color: #BFBFBF ;
+    --container-color:#212121;
+    --container-color-alt:#181616;
+    --body-color:#2B2B2B;
+}
 
 /*button dark light*/
+.change-theme{
+    position: absolute;
+    right: 0;
+    top: 2.2rem;
+    display: flex;
+    color: var(--title-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
 
+.change-theme:hover{
+    color: var(--title-color);
+}
 /*font size variable to scale cv*/
 
 /*generate pdf button*/
@@ -465,4 +484,18 @@ img{
     .home_button-movil{
         display: none;
     }
+
+    .references_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .languages_content{
+       grid-template-columns: repeat(3, max-content);
+       column-gap: 3.5rem;
+    }
+
+    .interests_container{
+        grid-template-columns: repeat(4, max-content);
+    }
+
+    .
 }
