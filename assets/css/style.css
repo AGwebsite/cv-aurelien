@@ -80,6 +80,19 @@ body.dark-theme{
 /*font size variable to scale cv*/
 
 /*generate pdf button*/
+.generate-pdf{
+    display: none;
+    position: absolute;
+    top: 2.2rem;
+    left : 0;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+.generate-pdf:hover{
+    color: var(--title-color);
+
+}
 
 /*classes modified to reduce size and print on a4 sheet*/
 body{
@@ -474,6 +487,11 @@ img{
     .resume_left, .resume_right{
         padding: 0 1.5rem;
     }
+
+    .generate-pdf{
+        display: inline-block;
+    }
+    
     .section-title, .profile_description{
         text-align: initial;
 
