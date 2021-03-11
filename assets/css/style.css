@@ -417,13 +417,14 @@ img{
 /*PROFILE DESCRIPTION*/
 
 .profile_description{
-    text-align:center;
+    text-align: center;
 }
 
 /*EDUCATION and EXPERIENCE*/
 .education_content, .experience_content{
     display: flex;
 }
+
 .education_time, .experience_time{
     padding-right: 1rem;
 }
@@ -432,7 +433,7 @@ img{
     display: block;
     width: 16px;
     height: 16px;
-    background-color: var(--text-color);
+    background-color: var(--text-color-light);
     border-radius: 50%;
     margin-top: .25rem;
 }
@@ -606,7 +607,7 @@ img{
 
     .interests_container{
         grid-template-columns: repeat(4, max-content);
+        column-gap: 3.5rem;
     }
 
-    .
 }
