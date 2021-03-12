@@ -115,7 +115,7 @@ body.scale-cv{
 }
 
 .scale-cv .section{
-    padding: 1.5rem 0.80rem;
+    padding: 1.5rem 0 .80rem;
 }
 
 .scale-cv .section-title{
@@ -128,8 +128,8 @@ body.scale-cv{
 }
 
 .scale-cv .home_img{
-    width: 90px;
-    height: 90px;
+    width: 6.5rem;
+    height: 8.5rem;
 }
 
 .scale-cv .home_container{
@@ -152,7 +152,8 @@ body.scale-cv{
 }
 
 .scale-cv .education_container,
-.scale-cv .experience_container{
+.scale-cv .experience_container,
+.scale-cv .certificate_container{
     gap: 1rem;
 }
 
