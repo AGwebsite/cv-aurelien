@@ -14,7 +14,7 @@
     --text-color: #403a3a;
     --text-color-light:#707070;
     --container-color:#fafafa;
-    --container-color-alt:#f0efef;
+    --container-color-alt: #ccffff;
     --body-color:#fcfcfc;
 
 /*font ant typography*/
@@ -583,7 +583,8 @@ a.exos{
     }
 
     .resume_left{
-        background-color: var(--container-color-alt);
+        background: linear-gradient(to right, rgb(43, 0, 255, 0.22), rgb(0, 255, 251, 0.22)); /*var(--container-color-alt);*/
+        opacity: 50;
     }
     .resume_left, .resume_right{
         padding: 0 1.5rem;
