@@ -470,8 +470,10 @@ a.exos{
 .skills_content, .languages_content{
     grid-template-columns: repeat(2, 1fr);
 }
+
 .languages_content{
     gap: 0;
+    column-gap: 4rem;
 }
 .skills_name, .languages_name{
     display: flex;
@@ -562,6 +564,10 @@ a.exos{
         grid-template-columns: repeat(2,1fr);
         gap: 1rem .5rem;
     }
+    .languages_content{
+        gap: 0;
+        column-gap: 4rem;
+    }
 }
 /*classes modified for large screen size*/
 @media screen and (min-width: 968px){
@@ -583,8 +589,7 @@ a.exos{
     }
 
     .resume_left{
-        background: linear-gradient(to right, rgb(43, 0, 255, 0.22), rgb(0, 255, 251, 0.22)); /*var(--container-color-alt);*/
-        opacity: 50;
+        background: linear-gradient(to right, rgb(237, 246, 106, 0.40), rgb(0, 136, 255, 0.40));
     }
     .resume_left, .resume_right{
         padding: 0 1.5rem;
@@ -610,7 +615,7 @@ a.exos{
     }
     .languages_content{
        grid-template-columns: repeat(3, max-content);
-       column-gap: 3.5rem;
+       column-gap: 3.5rem ;
     }
 
     .interests_container{
