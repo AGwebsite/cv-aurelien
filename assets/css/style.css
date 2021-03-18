@@ -589,7 +589,7 @@ a.exos{
     }
 
     .resume_left{
-        background: linear-gradient(to right, rgb(237, 246, 106, 0.40), rgb(0, 136, 255, 0.40));
+        background: linear-gradient(to right, rgb(237, 246, 106, 0.25), rgb(0, 136, 255, 0.25));
     }
     .resume_left, 
     .resume_right{
