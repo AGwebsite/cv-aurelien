@@ -591,7 +591,8 @@ a.exos{
     .resume_left{
         background: linear-gradient(to right, rgb(237, 246, 106, 0.40), rgb(0, 136, 255, 0.40));
     }
-    .resume_left, .resume_right{
+    .resume_left, 
+    .resume_right{
         padding: 0 1.5rem;
     }
 
