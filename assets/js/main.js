@@ -115,13 +115,13 @@ function removeScale(){
 //         html2pdf(areaCv, opt)
 //     }
 
-    //When the button is clicked, it executes the three functions
-    resumeButton.addEventListener('click', ()=>{
+    // //When the button is clicked, it executes the three functions
+    // resumeButton.addEventListener('click', ()=>{
 
-            //1. The class .scale-cv is added to the body, where it reduces the size of the size of the elements
-            scaleCv()
-            //2. the PDF is generated
-            generateResume()
-            //3. The .scale-cv class is removed from the body after 5 seconds to return o normal size
-            setTimeout(removeScale, 5000)
-    })
+    //         //1. The class .scale-cv is added to the body, where it reduces the size of the size of the elements
+    //         scaleCv()
+    //         //2. the PDF is generated
+    //         generateResume()
+    //         //3. The .scale-cv class is removed from the body after 5 seconds to return o normal size
+    //         setTimeout(removeScale, 5000)
+    // })
